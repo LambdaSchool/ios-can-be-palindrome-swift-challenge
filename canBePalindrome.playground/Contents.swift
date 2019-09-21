@@ -1,7 +1,15 @@
 import Foundation
 
 func canBePalindrome(_ string: String) -> Bool {
-
+    let reversed = String(string.reversed())
+    
+    if reversed == string {
+        return true
+        
+    } else {
+        return false
+        
+    }
 }
 
 
