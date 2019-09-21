@@ -13,7 +13,7 @@ func canBePalindrome(_ string: String) -> Bool {
     }
     
     let reversedString = String(filteredString.reversed())
-    return reversedString == filteredString ? true : false
+    return reversedString.lowercased() == filteredString.lowercased() ? true : false
 }
 
 
@@ -24,3 +24,7 @@ canBePalindrome("a")        // should return true
 canBePalindrome("aa")       // should return true
 canBePalindrome("hannah")   // should return true
 canBePalindrome("abc")      // should return false
+
+canBePalindrome("This is a string with some spaces")
+canBePalindrome("Never odd or even")
+canBePalindrome("Borrow or rob?")
