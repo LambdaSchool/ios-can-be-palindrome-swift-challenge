@@ -1,7 +1,20 @@
 import Foundation
 
 func canBePalindrome(_ string: String) -> Bool {
-
+    var isPalindrome: Bool
+    let string = string.lowercased()
+    print(string)
+    
+    let reverseString = String(string.reversed())
+    print(reverseString)
+    
+    if string.isEqual(reverseString) {
+        isPalindrome = true
+    } else {
+        isPalindrome = false
+    }
+    
+    return isPalindrome
 }
 
 
