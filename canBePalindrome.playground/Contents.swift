@@ -1,10 +1,14 @@
 import Foundation
 
 func canBePalindrome(_ string: String) -> Bool {
-
+    
+    var test = true
+    var word = canBePalindrome("")
+    
+    return test
 }
 
-
+    
 // Test Cases
 canBePalindrome("tacocat")  // should return true
 canBePalindrome("daily")    // should return false
