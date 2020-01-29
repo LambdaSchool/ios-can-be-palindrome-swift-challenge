@@ -2,7 +2,7 @@ import Foundation
 
 func canBePalindrome(_ string: String) -> Bool {
     
-        if string = string.reversed() {
+        if string == String(string.reversed()) {
             return true
         } else {
             return false
