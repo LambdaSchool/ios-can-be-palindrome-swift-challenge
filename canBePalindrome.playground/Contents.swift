@@ -1,7 +1,10 @@
 import Foundation
 
 func canBePalindrome(_ string: String) -> Bool {
-
+    // Reversing the text order
+    // Compare it to the original text
+    // Returning the Boolean result
+    return String(string.reversed()) == string
 }
 
 
