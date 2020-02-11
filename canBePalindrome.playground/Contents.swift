@@ -7,7 +7,7 @@ func canBePalindrome(_ string: String) -> Bool {
         print("The word \"\(string)\" is a palindrome")
         return true
     } else {
-        print("The word \"\(string)\" is not a palindrome")
+        print("The input of \"\(string)\" is not a palindrome")
         return false
     }
 }
