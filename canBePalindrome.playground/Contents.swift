@@ -1,7 +1,14 @@
+
+
+
 import Foundation
 
 func canBePalindrome(_ string: String) -> Bool {
-
+    var reversedString = ""
+    for letter in string.reversed() {
+        reversedString.append(letter)
+    }
+    return reversedString == string ?  true :  false
 }
 
 
