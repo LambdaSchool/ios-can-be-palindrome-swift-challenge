@@ -1,9 +1,16 @@
 import Foundation
 
 func canBePalindrome(_ string: String) -> Bool {
-
+    
+    let stringReversed = String(string.reversed())
+    
+    if string == stringReversed {
+        return true
+    }  else {
+        return false
+        
+    }
 }
-
 
 // Test Cases
 canBePalindrome("tacocat")  // should return true
@@ -12,3 +19,4 @@ canBePalindrome("a")        // should return true
 canBePalindrome("aa")       // should return true
 canBePalindrome("hannah")   // should return true
 canBePalindrome("abc")      // should return false
+
