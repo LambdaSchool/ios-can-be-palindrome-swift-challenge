@@ -1,8 +1,17 @@
 import Foundation
 
 func canBePalindrome(_ string: String) -> Bool {
-
+    let reverseString = String(string.reversed())
+    if(string != "" && string == reverseString) {
+            
+        print("The word \"\(string)\" is a palindrome")
+        return true
+    } else {
+        print("The word \"\(string)\" is not a palindrome")
+        return false
+    }
 }
+
 
 
 // Test Cases
