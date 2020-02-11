@@ -15,9 +15,11 @@ func canBePalindrome(_ string: String) -> Bool
     
     for words in palindromeArray
     {
-        
+        if words == palindromeArray.reverse()
     }
     return false
+    
+    index += string
 }
 
 
