@@ -4,9 +4,9 @@
 import Foundation
 
 func canBePalindrome(_ string: String) -> Bool {
-    let lowerCaseString = string.lowercased()
+    let lowerCaseString = String(string.lowercased().reversed())
     var reversedString = ""
-    for letter in lowerCaseString.reversed() {
+    for letter in lowerCaseString {
         reversedString.append(letter)
     }
     print(reversedString)
