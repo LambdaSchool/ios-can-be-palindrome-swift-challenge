@@ -1,14 +1,31 @@
 import Foundation
 
-func canBePalindrome(_ string: String) -> Bool {
-
+func canBePalindrome(string: String) -> Bool {
+    var forward: [Character] = []
+    for letter in string {
+        forward.append(letter)
+    }
+    var reverse: [Character] = []
+    for letters in string {
+        reverse.insert(letters, at: 0)
+    }
+    if forward == reverse {
+        print("True")
+        return true
+    } else {
+        print("False")
+        return false
+    }
 }
 
 
 // Test Cases
-canBePalindrome("tacocat")  // should return true
-canBePalindrome("daily")    // should return false
-canBePalindrome("a")        // should return true
-canBePalindrome("aa")       // should return true
-canBePalindrome("hannah")   // should return true
-canBePalindrome("abc")      // should return false
+canBePalindrome(string: "tacocat")  // should return true
+canBePalindrome(string: "daily")    // should return false
+canBePalindrome(string: "a")        // should return true
+canBePalindrome(string: "aa")       // should return true
+canBePalindrome(string: "hannah")   // should return true
+canBePalindrome(string: "abc")      // should return false
+
+
+
