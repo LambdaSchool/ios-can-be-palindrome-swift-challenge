@@ -1,7 +1,8 @@
 import Foundation
 
-func canBePalindrome(_ string: String) -> Bool {
-
+func canBePalindrome(_ word: String) -> Bool {
+    let lowercased = word.lowercased()
+    return lowercased.reversed() == Array(lowercased)
 }
 
 
