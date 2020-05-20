@@ -1,6 +1,16 @@
-import Foundation
+import UIKit
 
 func canBePalindrome(_ string: String) -> Bool {
+    let inputValue = string.count / 2
+    for index in 0..<inputValue {
+        let first = string.index(string.startIndex, offsetBy: index)
+        let last = string.index(string.endIndex, offsetBy: (index * -1) - 1)
+        if string[first] != string[last] {
+            return false
+        }
+    }
+
+    return true
 
 }
 
